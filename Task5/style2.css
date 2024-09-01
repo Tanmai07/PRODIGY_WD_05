@@ -1,0 +1,154 @@
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ed3f0b, #bb8f08);
+    color: #fff;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+/* Weather Card Styling */
+.weather-card {
+    background-color: rgba(67, 166, 66, 0.9);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 350px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Field Styling */
+#city-input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#city-input:focus {
+    outline: none;
+    border-color: #1565C0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#city-input::placeholder {
+    color: #888;
+}
+
+/* Button Styling */
+#city-input-btn {
+    padding: 12px 20px;
+    margin-top: 10px;
+    background-color: #060808;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+#city-input-btn:hover {
+    background-color: #007BFF;
+    transform: scale(1.05);
+}
+
+/* Weather Info Display */
+#weather-info {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Weather Icon */
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Temperature Display */
+#temperature {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 12px 0;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Weather Description */
+#description {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #ddd;
+    text-transform: capitalize;
+}
+
+/* Wind Speed */
+#wind-speed {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+/* Date Display */
+#date {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 426px) {
+    .weather-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #city-input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #city-input-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #temperature {
+        font-size: 28px;
+    }
+
+    #description {
+        font-size: 18px;
+    }
+
+    #wind-speed {
+        font-size: 14px;
+    }
+
+    #date {
+        font-size: 12px;
+    }
+}
